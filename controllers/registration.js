@@ -1,13 +1,16 @@
 var express = require('express');
-var userModel = require('./../models/user-model');
+var db = require('./../models/db');
+
 var router = express.Router();
 
 router.get('/', function(request, response){
-	response.render('registration/registration');
+
+		
+			response.redirect('/registration');
+			
 });
 
-
-
 module.exports = router;
+
 
 
