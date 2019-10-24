@@ -10,6 +10,7 @@ var user = require('./controllers/user');
 var logout = require('./controllers/logout');
 var registration = require('./controllers/registration');
 var user_view = require('./controllers/user_view');
+
 var app = express();
 
 
