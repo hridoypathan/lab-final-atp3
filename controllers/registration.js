@@ -2,12 +2,8 @@ var express = require('express');
 var db = require('./../models/db');
 
 var router = express.Router();
-
-router.get('/', function(request, response){
-
-		
-			response.redirect('/registration');
-			
+router.get('/registration/registration', function(request, response){
+	response.render("/registration/registration");
 });
 
 module.exports = router;
